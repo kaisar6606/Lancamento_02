@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo da aba de navegacao -->
+    <title>G&TO - Uma Nova Casa de Moda ESG com roupas no estilo Natural Esportivo</title>
+    <!--Colocando imagem na aba do navegador-->
+    <link rel="icon" href="./img/&.png">
+    <!-- Colocando descricao no site-->
+    <meta name="description" content="Uma casa de Moda comprometida com o movimento ESG, focada em roupas no Estilo Natural Esportivo para quem busca por roupas confortáveis e despojadas.
+
+    ">
+    <!--link com css-->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--Importando icons do font awesome-->
+    <script src="https://kit.fontawesome.com/b31f6bdd9a.js" crossorigin="anonymous"></script>
+
+    <!-- Mensagem de alerta antes de enviar o email -->
+    <script>
+        function mensagem() {
+            alert("você será redirecionado para o seu servidor de email," +
+                "caso não esteja logado no seu email, efetue o login e tente novamente")
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Karla&family=Tenor+Sans&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="alinhamento">
+
+            <a class="link_logo" href="#">
+                <img src="./img/logo.svg"
+                    alt="O logotipo da Jeito é composto apenas de letras no estilo sem serifa, modernas e condensadas, as cores utilizadas são branco e bege, o logo está em um fundo verdade00">
+            </a>
+
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem Somos?</a></li>
+                <li><a href="#conheca_esg">Conheça a ESG</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+        <h1>Página início da Jeito</h1>
+
+
+        <!--Quem Somos?-->
+        <section class="quem_somos alinhamento" id="quem_somos">
+            <img class="primeira_foto" src="./img/mother-daughter-spending-time-together-outside-park-mother-s-day.jpg"
+                alt="A imagem mostra uma mãe com a filha em um parque, elas estão usando roupas combinando, uma camiseta branca e shorts jeans, a mãe está sentada recebendo um beijo da filha">
+
+            <div class="sobre">
+                <p class="sobre_titulo">Olá, Somos a G&TO!</p>
+                <P class="sobre_texto">Uma casa de moda comprometida
+                    com o movimento ESG, focada em roupas no Estilo
+                    Natural Esportivo para quem busca por roupas
+                    confortáveis e despojadas.</p>
+                <button class="btn_esg">
+                    <a href="#">Conheça a ESG</a>
+                </button>
+            </div>
+        </section>
+
+        <section class="data">
+            <p>Lançamento da <span>g&to</span></p>
+            <time datetime="2023-06-06">06/06/2023</time>
+        </section>
+
+
+        <!--Imagens-->
+        <section class="imagens">
+            <div class="imgs alinhamento">
+
+                <img src="./img/0fe95739-2565-4482-9dda-dc1ec26ce31a.jfif"
+                    alt=" Homem com roupa formal e um casaco laranja">
+                <img src="./img/portrait-young-woman-wearing-2000-s-fashion-style.jpg"
+                    alt="Mulher deitada no chão, usando um top preto e um oculus com a lente cinza">
+                <img src="./img/fashionable-woman-wearing-sunglasses.jpg"
+                    alt="Mulher com a mão no óculos olhando para frente">
+            </div>
+
+        </section>
+
+        <!--ESG-->
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <p class="sobre_esg_titulo">O que é ESG?</p>
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas
+                    que avaliam como as empresas cuidam do meio ambiente, das pessoas
+                    que trabalham com elas e de como são administradas. Por exemplo,
+                    uma empresa que usa materias recicláveis e se preocupa em ter
+                    um ambiente de trabalho saudável para os funcionários tem uma boa
+                    nota em ESG. Isso é importante porque muitas pessoas estão preocupadas
+                    em apoiar empresas que cuidam do mundo e das pessoas, não só em
+                    ganhar dinheiro.
+            </div>
+            <img class="esg_foto" src="./img/WhatsApp Image 2023-05-09 at 16.47.11.jpeg"
+                alt="A imagem mostra um homem na rua utilizando uma blusa de moletom branca com as letras J, M e G em texto preto. além disso, o modelo utiliza calça preta e boné e tênis branco. ">
+        </section>
+
+        <!-- Formulario -->
+
+        <section class="formulario">
+            <p class="formulario_titulo"> Ficou com alguma duvida?</p>
+            <!-- C (criar) R (listar) U (atualizar) D(excluir)-->
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plan">
+                <!-- Nome -->
+                <div>
+                    <label for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email:</label>
+                    <input class="borda" type="email" id="email" name="email">
+
+                </div>
+
+                <!-- Mensagem -->
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="borda" name="massage" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+            </form>
+        </section>
+
+        <!--Contato-->
+        <section class="contato" id="contato">
+            <p class="contato_titulo">Contato</p>
+
+            <div class="conteudo_contato">
+
+
+
+                <div class="borda_mapa">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.698900349174!2d-46.57329922474684!3d-23.61512917876283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec439b9ce3%3A0x92940269447ce633!2sR.%20Niter%C3%B3i%2C%20180%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1sen!2sbr!4v1683145095427!5m2!1sen!2sbr"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                <div class="contato_info">
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99)99999-9999</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@geto.com</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niterói, 180 - SCS</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <!--&copy;-->
+        <p>Todos os direitos reservados &#169; G&TO </p>
+    </footer>
+</body>
+
+</html>

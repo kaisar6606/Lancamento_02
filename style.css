@@ -1,0 +1,514 @@
+/* Importando a tipográfia */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&family=Tenor+Sans&display=swap');
+
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/* Variaveis CSS */
+:root {
+    --font-karla: 'Karla', sans-serif;
+    --font-tenor: 'Tenor Sans', sans-serif;
+    --verde: #5D7554;
+    --branco_Pastel: #EEE5DA;
+
+}
+
+.alinhamento {
+    width: 1440px;
+    margin: 0 auto;
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--verde);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.logo {
+    width: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    list-style: none;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: var(--font-karla);
+    font-weight: 900;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--branco_Pastel);
+    color: var(--branco_Pastel);
+}
+
+.link_logo>img {
+    height: 70px;
+}
+
+/* Quem Somos */
+
+main {
+    background-color: var(--branco_Pastel);
+}
+
+h1 {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.quem_somos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.primeira_foto {
+    width: 700px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0, 4);
+    border-radius: 70px;
+}
+
+.sobre {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_titulo {
+    font-family: var(--font-tenor);
+    font-size: 60px;
+}
+
+.sobre_texto {
+    font-family: var(--font-karla);
+    font-size: 25px;
+}
+
+.btn_esg {
+    background-color: var(--verde);
+    border-radius: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    box-shadow: 5px 5px 40px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn_esg a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Data de lançamento */
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--te);
+    font-size: 90px;
+    color: var(--branco_Pastel);
+    background-color: var(--verde);
+    padding: 100px;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+/* imagens */
+
+.imagens {
+    background-color: var(--verde);
+    padding-bottom: 100px;
+
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imgs>* {
+    width: 475px;
+    height: 350px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* ESG */
+
+.esg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.esg_foto {
+    height: 500px;
+    margin-top: 135px;
+
+}
+
+.sobre_esg {
+    text-align: center;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre_esg_titulo {
+    font-family: var(--font-tenor);
+    font-size: 60px;
+}
+
+.sobre_esg_texto {
+    font-family: var(--font-karla);
+    font-size: 30px;
+}
+
+.esg img {
+    box-shadow: 10px 10px 40px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 70px;
+}
+
+/* Formulario */
+
+.formulario {
+    background-color: var(--verde);
+    padding: 100px 0;
+}
+
+.formulario_titulo {
+    font-family: var(--font-tenor);
+    font-size: 60px;
+    color: var(--branco_Pastel);
+    text-align: center;
+    margin: 13px;
+}
+
+form {
+    color: rgb(255, 255, 255);
+    font-family: var(--font-tenor);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 25px;
+}
+
+input {
+    height: 35px;
+    padding: 20px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+.borda {
+    border-radius: 15px;
+    border: 1px solid var(--branco_Pastel);
+}
+
+.btn_forms {
+    background: white;
+    border-radius: 30px;
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--verde);
+    margin: 0 auto;
+}
+
+/* Contato */
+
+.mapa {
+    width: 580px;
+}
+
+.contato {
+    padding: 100px 0;
+}
+
+.contato_titulo {
+    font-family: var(--font-tenor);
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conteudo_contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.borda_mapa {
+    border: 5px solid var(--verde);
+    width: 580px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato_info {
+    font-family: var(--font-karla);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info>i {
+    margin-right: 20px;
+    color: var(--verde);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--verde);
+    color: white;
+    font-family: var(--font-tenor);
+    font-size: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividade */
+
+/* Tamanho de telas */
+
+/* pequenas telas: até 600px */
+/* Celular: de 600px até 768 */
+/* Tablet: 768px até 992px */
+/* Desktop:992px até 1200px */
+/* Grandes telas: Acima de 1200px */
+
+@media screen and (max-width: 1440px) {
+
+    .alinhamento {
+        width: 100%;
+    }
+
+    nav {
+        padding: 0 50px;
+    }
+
+    .sobre {
+        max-width: 500px;
+    }
+
+    .quem_somos {
+        padding: 100px 50px;
+        font-family: var(--font-tenor);
+    }
+
+    .imgs {
+        flex-wrap: wrap;
+    }
+
+    .sobre_esg_texto {
+        font-size: 26px;
+    }
+
+    .esg img {
+        width: 50%;
+    }
+
+    .esg {
+        padding: 100px 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .primeira_foto {
+        width: 550px;
+    }
+
+    .esg img {
+        width: 45%;
+    }
+
+    .sobre_esg {
+        width: 480px;
+    }
+
+    .sobre_esg_texto {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .quem_somos {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .sobre {
+        margin-top: 30px;
+    }
+
+    .imgs {
+        gap: 50px;
+    }
+
+    .data {
+        font-size: 60px;
+    }
+
+    .esg {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .sobre_esg {
+        width: 600px;
+    }
+
+    .conteudo_contato {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #burguer {
+        display: none;
+    }
+
+    .esg img {
+        width: 72%;
+    }
+
+    .sobre_esg {
+        width: 580px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #burguer {
+        display: block;
+        color: white;
+        font-size: 55px;
+    }
+
+    #itens {
+        /* viewport-height (vh) ; */
+        position: absolute;
+        height: 92vh;
+        /* viewport width (vw); */
+        width: 50vw;
+        top: 15vh;
+        right: 0;
+        background-color: var(--verde);
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .menu li {
+        padding: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .data {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .primeira_foto {
+        width: 450px;
+    }
+
+    .data {
+        font-size: 45px;
+    }
+
+    .sobre_esg_texto {
+        padding: 45px;
+    }
+
+    .esg_foto {
+        width: 100%;
+    }
+
+    .mapa {
+        width: 400px;
+    }
+
+    .borda_mapa {
+        width: 480px;
+    }
+
+    .conteudo_contato {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
